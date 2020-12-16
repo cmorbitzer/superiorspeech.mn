@@ -2,30 +2,39 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 export default () => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+  <header className="pt-6">
+    <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">
+      <div className="flex items-center flex-1">
+        <div className="flex items-center justify-between w-full md:w-auto">
+          <img
+            className="h-8 w-auto sm:h-10"
+            src="./LogoSuperior.jpg"
+            alt="Superior Speech Therapy logo"
+          />
+
+          <div className="hidden md:block md:ml-2 md:space-x-10">
+            <h2 className="text-lg font-semibold font-serif text-gray-900 sm:text-xl sm:tracking-tight lg:text-2xl">
+              Superior Speech Therapy
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <a
+          href="#"
+          className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
         >
-          Superior Speech Therapy
-        </Link>
-      </h1>
-    </div>
+          Client Login
+        </a>
+
+        <a
+          href="#"
+          className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+        >
+          Contact
+        </a>
+      </div>
+    </nav>
   </header>
 );
