@@ -346,9 +346,7 @@ export default () => {
               </p>
 
               <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                Do you have questions?
-                <br />
-                All prospective clients receive a free consultation.
+                Questions? Request a free consultation.
               </p>
 
               <form
@@ -371,6 +369,7 @@ export default () => {
                       type="text"
                       autoComplete="name"
                       className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      required
                     />
                   </div>
                 </div>
@@ -389,6 +388,7 @@ export default () => {
                       type="email"
                       autoComplete="email"
                       className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      required
                     />
                   </div>
                 </div>
@@ -408,8 +408,8 @@ export default () => {
                       name="phone"
                       id="phone"
                       autoComplete="tel"
-                      aria-describedby="phone_description"
                       className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      required
                     />
                   </div>
                 </div>
@@ -428,7 +428,6 @@ export default () => {
                       id="how_can_we_help"
                       name="how_can_we_help"
                       aria-describedby="how_can_we_help_description"
-                      rows="4"
                       className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
