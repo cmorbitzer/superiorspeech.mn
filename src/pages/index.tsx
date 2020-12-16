@@ -37,6 +37,30 @@ export default () => {
         }
       }
 
+      clientArt1: file(relativePath: { eq: "client-art-1.jpg" }) {
+        childImageSharp {
+          fixed(width: 256, height: 256) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      clientArt1Xl: file(relativePath: { eq: "client-art-1.jpg" }) {
+        childImageSharp {
+          fixed(width: 320, height: 320) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      lakeSuperiorCabin: file(relativePath: { eq: "lake-superior-cabin.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
       session1: file(relativePath: { eq: "speech-session-1.jpg" }) {
         childImageSharp {
           fixed(width: 256, height: 256) {
@@ -281,6 +305,174 @@ export default () => {
               </div>
             </div>
           </dl>
+        </div>
+      </section>
+
+      <section>
+        <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+          <TestimonialBanner
+            imgData={images}
+            imgKey="clientArt1"
+            imgAlt="Clietn artwork"
+            quote="An indication of how my children feel about Bri: without prompt, my daughter brings an
+                original piece of artwork for Bri. Every. Single. Session."
+            cite="John, father and teacher"
+          />
+        </div>
+      </section>
+
+      <section className="relative bg-white mx-auto max-w-7xl">
+        <div className="lg:absolute lg:inset-0">
+          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <Img
+              fluid={images.lakeSuperiorCabin.childImageSharp.fluid}
+              className="h-56 w-full object-cover lg:absolute lg:h-full"
+              alt="Lake Superior cabin"
+            />
+          </div>
+        </div>
+
+        <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+          <div className="lg:pr-8">
+            <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Let's talk
+              </h2>
+
+              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
+                I’d love to hear from you!
+                <br />
+                Send me a message using the secure form below.
+              </p>
+
+              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
+                Do you have questions?
+                <br />
+                All prospective clients receive a free consultation.
+              </p>
+
+              <form
+                action="#"
+                method="POST"
+                className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+              >
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Name
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      autoComplete="name"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Email
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <div className="flex justify-between">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Phone
+                    </label>
+                  </div>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      autoComplete="tel"
+                      aria-describedby="phone_description"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <div className="flex justify-between">
+                    <label
+                      htmlFor="how_can_we_help"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      How can I help you?
+                    </label>
+                  </div>
+                  <div className="mt-1">
+                    <textarea
+                      id="how_can_we_help"
+                      name="how_can_we_help"
+                      aria-describedby="how_can_we_help_description"
+                      rows="4"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="how_did_you_hear_about_us"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    How did you hear about me?
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="how_did_you_hear_about_us"
+                      id="how_did_you_hear_about_us"
+                      className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="text-right sm:col-span-2">
+                  <button
+                    type="submit"
+                    className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+
+              <p className="mt-3 text-sm text-gray-500">
+                We care about the protection of your data.
+                <br />
+                All communication with Superior Speech Therapy is confidential.
+                <br />
+                Read our{' '}
+                <a href="#" className="font-medium text-gray-900 underline">
+                  Privacy Policy
+                </a>
+                .
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
