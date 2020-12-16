@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import logo from '../images/superior_speech_therapy-logo.png';
 
 export default () => (
@@ -28,12 +29,12 @@ export default () => (
           Client Login
         </a>
 
-        <a
-          href="#"
+        <AnchorLink
+          to="/#contact"
           className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
         >
           Contact
-        </a>
+        </AnchorLink>
       </div>
     </nav>
   </header>

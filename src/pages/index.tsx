@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -124,12 +125,12 @@ export default () => {
 
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
               <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
+                <AnchorLink
+                  to="/#contact"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Request a free consultation
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </div>
@@ -179,12 +180,12 @@ export default () => {
 
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
               <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
+                <AnchorLink
+                  to="/#contact"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Request a free consultation
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </div>
@@ -321,7 +322,7 @@ export default () => {
         </div>
       </section>
 
-      <section className="relative bg-white mx-auto max-w-7xl">
+      <section id="contact" className="relative bg-white mx-auto max-w-7xl">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <Img
