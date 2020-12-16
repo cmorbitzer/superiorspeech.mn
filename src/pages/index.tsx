@@ -4,10 +4,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ServicesList from '../components/ServicesList';
-import TestimonialBanner, {
-  generateTestimonialImgSrc,
-  renderTestimonialImg,
-} from '../components/TestimonialBanner';
+import TestimonialBanner from '../components/TestimonialBanner';
 
 export default () => {
   const images = useStaticQuery(graphql`
@@ -128,10 +125,9 @@ export default () => {
       <section>
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
           <TestimonialBanner
-            image={renderTestimonialImg({
-              fixed: generateTestimonialImgSrc(images, 'session1'),
-              alt: 'Speech therapy session',
-            })}
+            imgData={images}
+            imgKey="session1"
+            imgAlt="Speech therapy session"
             quote="My son looked forward to his speech therapy sessions.
                     We saw tremendous growth in his speech development under
                     Briann's direction. Today I no longer have concerns."
@@ -178,10 +174,9 @@ export default () => {
       <section>
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
           <TestimonialBanner
-            image={renderTestimonialImg({
-              fixed: generateTestimonialImgSrc(images, 'briannWithClient1'),
-              alt: 'Briann with client',
-            })}
+            imgData={images}
+            imgKey="briannWithClient1"
+            imgAlt="Briann with client"
             quote="She sees beyond the mere speech remediation to
                     communication as a whole. It is apparent she values
                     communication when she herself graciously connects with

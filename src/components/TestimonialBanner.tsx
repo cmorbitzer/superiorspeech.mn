@@ -1,34 +1,38 @@
 import React from 'react';
-import Img, { GatsbyImageProps } from 'gatsby-image';
+import Img from 'gatsby-image';
 import classNames from 'classnames';
 
 interface TestimonialBannerProps {
-  image: JSX.Element;
+  imgData: any;
+  imgKey: string;
+  imgAlt: string;
   quote: string;
   cite: string;
   align?: 'left' | 'right';
 }
 
-export const generateTestimonialImgSrc = (data: any, key: string) => [
-  data[key].childImageSharp.fixed,
-  {
-    ...data[key + 'Xl'].childImageSharp.fixed,
-    media: `(min-width: 1280px)`,
-  },
-];
-
-export const renderTestimonialImg = (props: GatsbyImageProps) => (
-  <Img className="h-64 w-64 rounded-full xl:h-80 xl:w-80" {...props} />
-);
-
 export default ({
-  image,
+  imgData,
+  imgKey,
+  imgAlt,
   quote,
   cite,
   align = 'left',
 }: TestimonialBannerProps) => {
   const renderImg = () => (
-    <div className="hidden lg:block lg:flex-shrink-0">{image}</div>
+    <div className="hidden lg:block lg:flex-shrink-0">
+      <Img
+        className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
+        fixed={[
+          imgData[imgKey].childImageSharp.fixed,
+          {
+            ...imgData[imgKey + 'Xl'].childImageSharp.fixed,
+            media: `(min-width: 1280px)`,
+          },
+        ]}
+        alt={imgAlt}
+      />
+    </div>
   );
 
   return (
