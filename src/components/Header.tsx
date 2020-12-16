@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+// import Image from './Image';
+import logo from '../images/superior_speech_therapy-logo.png';
 
 export default () => (
   <header className="pt-6">
@@ -7,8 +9,8 @@ export default () => (
       <div className="flex items-center flex-1">
         <div className="flex items-center justify-between w-full md:w-auto">
           <img
+            src={logo}
             className="h-8 w-auto sm:h-10"
-            src="./LogoSuperior.jpg"
             alt="Superior Speech Therapy logo"
           />
 
