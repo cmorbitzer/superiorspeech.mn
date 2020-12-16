@@ -16,6 +16,26 @@ export default () => {
         }
       }
 
+      briannWithClient1: file(
+        relativePath: { eq: "briann-with-client-1.jpg" }
+      ) {
+        childImageSharp {
+          fixed(width: 256, height: 256) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      briannWithClient1Xl: file(
+        relativePath: { eq: "briann-with-client-1.jpg" }
+      ) {
+        childImageSharp {
+          fixed(width: 320, height: 320) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
       session1: file(relativePath: { eq: "speech-session-1.jpg" }) {
         childImageSharp {
           fixed(width: 256, height: 256) {
@@ -33,6 +53,14 @@ export default () => {
       }
     }
   `);
+
+  const briannWithClient1ImgSrc = [
+    images.briannWithClient1.childImageSharp.fixed,
+    {
+      ...images.briannWithClient1Xl.childImageSharp.fixed,
+      media: `(min-width: 1280px)`,
+    },
+  ];
 
   const session1ImgSrc = [
     images.session1.childImageSharp.fixed,
@@ -176,6 +204,42 @@ export default () => {
 
           <div className="mt-12 lg:mt-0 lg:col-span-2">
             <ServicesList services={services} />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+          <div className="relative lg:flex lg:items-center">
+            <div className="relative lg:mr-10 text-right">
+              <blockquote className="relative">
+                <div className="text-2xl leading-9 font-medium text-gray-900">
+                  <p>
+                    &ldquo;She sees beyond the mere speech remediation to
+                    communication as a whole. It is apparent she values
+                    communication when she herself graciously connects with
+                    people of all ages and diversities.&rdquo;
+                  </p>
+                </div>
+                <footer className="mt-8">
+                  <div className="flex">
+                    <div className="ml-4 lg:ml-0 flex-grow">
+                      <div className="text-base font-medium text-gray-500">
+                        Jen, mother
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+
+            <div className="hidden lg:block lg:flex-shrink-0">
+              <Img
+                className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
+                fixed={briannWithClient1ImgSrc}
+                alt="Briann with client"
+              />
+            </div>
           </div>
         </div>
       </section>
