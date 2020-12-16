@@ -110,7 +110,7 @@ export default () => {
               </span>
 
               <span className="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl">
-                <span className="block text-gray-900">Delivering</span>
+                <span className="block text-gray-900">Discover</span>
                 <span className="block text-indigo-600">
                   effective communication
                 </span>
@@ -233,9 +233,9 @@ export default () => {
                 </dt>
 
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  We treat communication and fluency conditions for all ages. We
+                  especially encourage ongoing stuttering support for adults and
+                  older children.
                 </dd>
               </div>
             </div>
@@ -251,9 +251,8 @@ export default () => {
                 </dt>
 
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  All sessions are one-on-one and tailored to the client's
+                  progress. Our clients never follow generic treatment programs.
                 </dd>
               </div>
             </div>
@@ -269,9 +268,9 @@ export default () => {
                 </dt>
 
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  Sessions are always conducted from the comfort of the client's
+                  home, school or office. In-person and virtual options are
+                  available.
                 </dd>
               </div>
             </div>
