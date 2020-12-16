@@ -6,6 +6,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ServicesList from '../components/ServicesList';
 import TestimonialBanner from '../components/TestimonialBanner';
+import MailIcon from '../icons/mail.svg';
+import PhoneIcon from '../icons/phone.svg';
 
 export default () => {
   const images = useStaticQuery(graphql`
@@ -342,8 +344,41 @@ export default () => {
 
               <p className="mt-4 text-lg text-gray-500 sm:mt-3">
                 I’d love to hear from you!
-                <br />
-                Send me a message using the secure form below.
+              </p>
+
+              <dl className="mt-4 mb-4 text-base text-gray-500">
+                <div>
+                  <dt className="sr-only">Phone number</dt>
+                  <dd className="flex">
+                    <PhoneIcon
+                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
+
+                    <span className="ml-3">
+                      <a href="tel:+13202248243">(320) 224-8243</a>
+                    </span>
+                  </dd>
+                </div>
+                <div className="mt-3">
+                  <dt className="sr-only">Email</dt>
+                  <dd className="flex">
+                    <MailIcon
+                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
+
+                    <span className="ml-3">
+                      <a href="mailto:briann.slp@gmail.com">
+                        briann.slp@gmail.com
+                      </a>
+                    </span>
+                  </dd>
+                </div>
+              </dl>
+
+              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
+                Or send me a message using the secure form below.
               </p>
 
               <p className="mt-4 text-lg text-gray-500 sm:mt-3">
