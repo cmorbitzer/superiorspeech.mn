@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ServicesList from '../components/ServicesList';
 import TestimonialBanner, {
+  generateTestimonialImgSrc,
   renderTestimonialImg,
 } from '../components/TestimonialBanner';
 
@@ -56,22 +57,6 @@ export default () => {
       }
     }
   `);
-
-  const briannWithClient1ImgSrc = [
-    images.briannWithClient1.childImageSharp.fixed,
-    {
-      ...images.briannWithClient1Xl.childImageSharp.fixed,
-      media: `(min-width: 1280px)`,
-    },
-  ];
-
-  const session1ImgSrc = [
-    images.session1.childImageSharp.fixed,
-    {
-      ...images.session1Xl.childImageSharp.fixed,
-      media: `(min-width: 1280px)`,
-    },
-  ];
 
   const services = [
     { title: 'Articulation', description: '' },
@@ -144,7 +129,7 @@ export default () => {
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
           <TestimonialBanner
             image={renderTestimonialImg({
-              fixed: session1ImgSrc,
+              fixed: generateTestimonialImgSrc(images, 'session1'),
               alt: 'Speech therapy session',
             })}
             quote="My son looked forward to his speech therapy sessions.
@@ -194,7 +179,7 @@ export default () => {
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
           <TestimonialBanner
             image={renderTestimonialImg({
-              fixed: briannWithClient1ImgSrc,
+              fixed: generateTestimonialImgSrc(images, 'briannWithClient1'),
               alt: 'Briann with client',
             })}
             quote="She sees beyond the mere speech remediation to

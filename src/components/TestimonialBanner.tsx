@@ -9,6 +9,14 @@ interface TestimonialBannerProps {
   align?: 'left' | 'right';
 }
 
+export const generateTestimonialImgSrc = (data: any, key: string) => [
+  data[key].childImageSharp.fixed,
+  {
+    ...data[key + 'Xl'].childImageSharp.fixed,
+    media: `(min-width: 1280px)`,
+  },
+];
+
 export const renderTestimonialImg = (props: GatsbyImageProps) => (
   <Img className="h-64 w-64 rounded-full xl:h-80 xl:w-80" {...props} />
 );
