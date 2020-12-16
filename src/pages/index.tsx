@@ -8,6 +8,7 @@ import ServicesList from '../components/ServicesList';
 import TestimonialBanner from '../components/TestimonialBanner';
 import MailIcon from '../icons/mail.svg';
 import PhoneIcon from '../icons/phone.svg';
+import QuoteIcon from '../icons/quote.svg';
 
 export default () => {
   const images = useStaticQuery(graphql`
@@ -508,6 +509,38 @@ export default () => {
                 .
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-indigo-800 mt-16 sm:mt-24 lg:mt-32">
+        <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
+          <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-indigo-900 lg:pr-16">
+            <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+              <div className="relative text-lg font-medium text-white md:flex-grow">
+                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600" />
+
+                <p className="relative">
+                  The progress my children have made since starting with Bri has
+                  been nothing less than amazing. My wife and Bri view Bri as a
+                  magician.
+                </p>
+              </div>
+            </blockquote>
+          </div>
+          <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+            <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+              <div className="relative text-lg font-medium text-white md:flex-grow">
+                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600" />
+
+                <p className="relative">
+                  Bri gave me the tools I needed to come alongside my child. I
+                  was amazed at her high level of education an expertise in the
+                  field, her deep passion, and her commitment to the success of
+                  her students.
+                </p>
+              </div>
+            </blockquote>
           </div>
         </div>
       </section>
