@@ -4,6 +4,9 @@ import Header from './Header';
 export default ({ children }: React.PropsWithChildren<{}>) => (
   <>
     <Header />
-    {children}
+
+    <main className="mt-16 sm:mt-24 lg:mt-32 pb-16 sm:pb-24 lg:pb-32">
+      {children}
+    </main>
   </>
 );
