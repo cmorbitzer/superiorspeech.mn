@@ -14,8 +14,32 @@ export default () => {
           }
         }
       }
+
+      session1: file(relativePath: { eq: "speech-session-1.jpg" }) {
+        childImageSharp {
+          fixed(width: 256, height: 256) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      session1Xl: file(relativePath: { eq: "speech-session-1.jpg" }) {
+        childImageSharp {
+          fixed(width: 320, height: 320) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `);
+
+  const session1ImgSrc = [
+    images.session1.childImageSharp.fixed,
+    {
+      ...images.session1Xl.childImageSharp.fixed,
+      media: `(min-width: 1280px)`,
+    },
+  ];
 
   return (
     <Layout>
@@ -68,6 +92,42 @@ export default () => {
                 className="w-full"
                 alt="Briann Morbitzer"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+          <div className="relative lg:flex lg:items-center">
+            <div className="hidden lg:block lg:flex-shrink-0">
+              <Img
+                className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
+                fixed={session1ImgSrc}
+                alt="Speech therapy session"
+              />
+            </div>
+
+            <div className="relative lg:ml-10">
+              <blockquote className="relative">
+                <div className="text-2xl leading-9 font-medium text-gray-900">
+                  <p>
+                    &ldquo;My son looked forward to his speech therapy sessions.
+                    We saw tremendous growth in his speech development under
+                    Briann's direction. Today I no longer have concerns.&rdquo;
+                  </p>
+                </div>
+
+                <footer className="mt-8">
+                  <div className="flex">
+                    <div className="ml-4 lg:ml-0">
+                      <div className="text-base font-medium text-gray-500">
+                        Amy, mother and physician
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
             </div>
           </div>
         </div>
