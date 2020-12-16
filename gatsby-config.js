@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Superior Speech Therapy`,
+    description: `Therapy for all ages and communication goals via in-home or virtual sessions.`,
   },
   plugins: [
     {
@@ -14,13 +13,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Superior Speech Therapy`,
+        short_name: `Superior Speech`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/superior_speech_therapy-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/superior_speech_therapy-logo.png`,
       },
     },
     `gatsby-plugin-postcss`,
