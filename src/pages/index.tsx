@@ -4,6 +4,9 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ServicesList from '../components/ServicesList';
+import TestimonialBanner, {
+  renderTestimonialImg,
+} from '../components/TestimonialBanner';
 
 export default () => {
   const images = useStaticQuery(graphql`
@@ -139,37 +142,16 @@ export default () => {
 
       <section>
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
-          <div className="relative lg:flex lg:items-center">
-            <div className="hidden lg:block lg:flex-shrink-0">
-              <Img
-                className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
-                fixed={session1ImgSrc}
-                alt="Speech therapy session"
-              />
-            </div>
-
-            <div className="relative lg:ml-10">
-              <blockquote className="relative">
-                <div className="text-2xl leading-9 font-medium text-gray-900">
-                  <p>
-                    &ldquo;My son looked forward to his speech therapy sessions.
+          <TestimonialBanner
+            image={renderTestimonialImg({
+              fixed: session1ImgSrc,
+              alt: 'Speech therapy session',
+            })}
+            quote="My son looked forward to his speech therapy sessions.
                     We saw tremendous growth in his speech development under
-                    Briann's direction. Today I no longer have concerns.&rdquo;
-                  </p>
-                </div>
-
-                <footer className="mt-8">
-                  <div className="flex">
-                    <div className="ml-4 lg:ml-0">
-                      <div className="text-base font-medium text-gray-500">
-                        Amy, mother and physician
-                      </div>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
+                    Briann's direction. Today I no longer have concerns."
+            cite="Amy, mother and physician"
+          />
         </div>
       </section>
 
@@ -210,37 +192,18 @@ export default () => {
 
       <section>
         <div className="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
-          <div className="relative lg:flex lg:items-center">
-            <div className="relative lg:mr-10 text-right">
-              <blockquote className="relative">
-                <div className="text-2xl leading-9 font-medium text-gray-900">
-                  <p>
-                    &ldquo;She sees beyond the mere speech remediation to
+          <TestimonialBanner
+            image={renderTestimonialImg({
+              fixed: briannWithClient1ImgSrc,
+              alt: 'Briann with client',
+            })}
+            quote="She sees beyond the mere speech remediation to
                     communication as a whole. It is apparent she values
                     communication when she herself graciously connects with
-                    people of all ages and diversities.&rdquo;
-                  </p>
-                </div>
-                <footer className="mt-8">
-                  <div className="flex">
-                    <div className="ml-4 lg:ml-0 flex-grow">
-                      <div className="text-base font-medium text-gray-500">
-                        Jen, mother
-                      </div>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
-
-            <div className="hidden lg:block lg:flex-shrink-0">
-              <Img
-                className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
-                fixed={briannWithClient1ImgSrc}
-                alt="Briann with client"
-              />
-            </div>
-          </div>
+                    people of all ages and diversities."
+            cite="Jen, mother"
+            align="right"
+          />
         </div>
       </section>
     </Layout>

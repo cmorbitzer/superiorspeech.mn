@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "classnames": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -25,6 +26,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/react-helmet": "^6.1.0",
     "prettier": "2.1.2"
   },
