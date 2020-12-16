@@ -352,9 +352,10 @@ export default () => {
               </p>
 
               <form
-                action="#"
                 method="POST"
                 className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                data-netlify="true"
+                name="contact"
               >
                 <div className="sm:col-span-2">
                   <label
