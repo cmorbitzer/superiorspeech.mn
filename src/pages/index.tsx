@@ -358,6 +358,8 @@ export default () => {
                 data-netlify="true"
                 name="contact"
               >
+                <input type="hidden" name="form-name" value="contact" />
+
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="name"
