@@ -118,9 +118,12 @@ export default () => {
             </h1>
 
             <p className="mt-3 text-base font-semibold text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Therapy for all ages and communication goals
-              <br />
-              via in-home or virtual sessions.
+              <span className="sm:inline-block">
+                Therapy for all ages and communication goals
+              </span>{' '}
+              <span className="sm:inline-block">
+                via in-home or virtual sessions.
+              </span>
             </p>
 
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">

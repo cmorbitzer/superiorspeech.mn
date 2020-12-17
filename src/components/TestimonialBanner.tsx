@@ -42,7 +42,7 @@ export default ({
       <div
         className={classNames([
           'relative',
-          align === 'left' ? 'lg:ml-10' : 'lg:mr-10 text-right',
+          align === 'left' ? 'lg:ml-10' : 'lg:mr-10 lg:text-right',
         ])}
       >
         <blockquote className="relative">

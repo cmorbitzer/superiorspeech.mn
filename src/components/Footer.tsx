@@ -36,8 +36,11 @@ export default () => (
 
       <div className="mt-12 border-t border-gray-200 pt-8">
         <p className="text-base text-gray-400 xl:text-center">
-          &copy; {new Date().getFullYear()} Superior Speech Therapy, LLC. All
-          rights reserved.
+          <span className="inline-block">
+            &copy; {new Date().getFullYear()} Superior Speech Therapy, LLC.
+          </span>
+
+          <span className="inline-block">All rights reserved.</span>
         </p>
       </div>
     </div>
