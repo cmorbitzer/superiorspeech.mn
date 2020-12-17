@@ -114,7 +114,7 @@ export default () => {
 
               <span className="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl">
                 <span className="block text-gray-900">Discover</span>
-                <span className="block text-indigo-600">
+                <span className="block text-denim-600">
                   effective communication
                 </span>
               </span>
@@ -139,7 +139,7 @@ export default () => {
               <div className="inline-flex rounded-md shadow">
                 <AnchorLink
                   to="/#contact"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-denim-600 hover:bg-denim-700"
                 >
                   Request a free consultation
                 </AnchorLink>
@@ -173,10 +173,10 @@ export default () => {
         </div>
       </section>
 
-      <section className="bg-indigo-50">
+      <section className="bg-denim-50">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div>
-            <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">
+            <h2 className="text-base font-semibold text-denim-600 uppercase tracking-wide">
               Client-Driven Therapy
             </h2>
 
@@ -194,7 +194,7 @@ export default () => {
               <div className="inline-flex rounded-md shadow">
                 <AnchorLink
                   to="/#contact"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-denim-600 hover:bg-denim-700"
                 >
                   Request a free consultation
                 </AnchorLink>
@@ -229,7 +229,7 @@ export default () => {
           <h2 className="sr-only">A better way to send money.</h2>
           <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-denim-500 text-white">
                 <UserGroupIcon className="h-6 w-6" aria-hidden="true" />
               </div>
 
@@ -247,7 +247,7 @@ export default () => {
             </div>
 
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-denim-500 text-white">
                 <FingerPrintIcon className="h-6 w-6" aria-hidden="true" />
               </div>
 
@@ -264,7 +264,7 @@ export default () => {
             </div>
 
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-denim-500 text-white">
                 <HomeIcon className="h-6 w-6" aria-hidden="true" />
               </div>
 
@@ -379,7 +379,7 @@ export default () => {
                       name="name"
                       type="text"
                       autoComplete="name"
-                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-denim-500 focus:border-denim-500 border-gray-300 rounded-md"
                       required
                     />
                   </div>
@@ -398,7 +398,7 @@ export default () => {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-denim-500 focus:border-denim-500 border-gray-300 rounded-md"
                       required
                     />
                   </div>
@@ -419,7 +419,7 @@ export default () => {
                       name="phone"
                       id="phone"
                       autoComplete="tel"
-                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-denim-500 focus:border-denim-500 border-gray-300 rounded-md"
                       required
                     />
                   </div>
@@ -439,7 +439,7 @@ export default () => {
                       id="how_can_we_help"
                       name="how_can_we_help"
                       aria-describedby="how_can_we_help_description"
-                      className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm sm:text-sm focus:ring-denim-500 focus:border-denim-500 border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -456,7 +456,7 @@ export default () => {
                       type="text"
                       name="how_did_you_hear_about_us"
                       id="how_did_you_hear_about_us"
-                      className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-sm focus:ring-denim-500 focus:border-denim-500 block w-full sm:text-sm border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -464,7 +464,7 @@ export default () => {
                 <div className="text-right sm:col-span-2">
                   <button
                     type="submit"
-                    className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-denim-600 hover:bg-denim-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-denim-500"
                   >
                     Submit
                   </button>
@@ -487,12 +487,12 @@ export default () => {
         </div>
       </section>
 
-      <section className="bg-indigo-800 mt-16 sm:mt-24 lg:mt-32">
+      <section className="bg-denim-800 mt-16 sm:mt-24 lg:mt-32">
         <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
-          <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-indigo-900 lg:pr-16">
+          <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-denim-900 lg:pr-16">
             <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
               <div className="relative text-lg font-medium text-white md:flex-grow">
-                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600" />
+                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-denim-600" />
 
                 <p className="relative">
                   The progress my children have made since starting with Bri has
@@ -503,10 +503,10 @@ export default () => {
             </blockquote>
           </div>
 
-          <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+          <div className="py-12 px-4 border-t-2 border-denim-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
             <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
               <div className="relative text-lg font-medium text-white md:flex-grow">
-                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600" />
+                <QuoteIcon className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-denim-600" />
 
                 <p className="relative">
                   Bri gave me the tools I needed to come alongside my child. I
