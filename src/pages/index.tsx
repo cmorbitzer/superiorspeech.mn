@@ -99,7 +99,10 @@ export default () => {
 
   return (
     <Layout>
-      <SEO title="Minnesota Stuttering and Articulation Treatment" />
+      <SEO
+        title="Minnesota Stuttering and Articulation Treatment"
+        description="Therapy for all ages and communication goals via in-home or virtual sessions."
+      />
 
       <section>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-8">
