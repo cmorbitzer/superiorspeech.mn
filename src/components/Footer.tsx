@@ -38,8 +38,7 @@ export default () => (
         <p className="text-base text-gray-400 xl:text-center">
           <span className="inline-block">
             &copy; {new Date().getFullYear()} Superior Speech Therapy, LLC.
-          </span>
-
+          </span>{' '}
           <span className="inline-block">All rights reserved.</span>
         </p>
       </div>

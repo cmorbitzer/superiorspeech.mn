@@ -412,7 +412,7 @@ export default () => {
                   </div>
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="tel"
                       name="phone"
                       id="phone"
                       autoComplete="tel"
