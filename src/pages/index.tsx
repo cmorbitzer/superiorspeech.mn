@@ -499,6 +499,7 @@ export default () => {
               </div>
             </blockquote>
           </div>
+
           <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
             <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
               <div className="relative text-lg font-medium text-white md:flex-grow">

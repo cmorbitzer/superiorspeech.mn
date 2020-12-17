@@ -32,6 +32,27 @@ export default () => (
             </a>
           </div>
         </div>
+
+        <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+          <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Resources
+              </h3>
+
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a
+                    href="https://www.mspstuttering.com/"
+                    className="text-base text-gray-500 hover:text-gray-900"
+                  >
+                    MSP Stuttering Group
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="mt-12 border-t border-gray-200 pt-8">
