@@ -329,7 +329,7 @@ export default () => {
                     />
 
                     <span className="ml-3">
-                      <a href="tel:+13202248243">(651) 279-1268</a>
+                      <a href="tel:+16512791268">(651) 279-1268</a>
                     </span>
                   </dd>
                 </div>
